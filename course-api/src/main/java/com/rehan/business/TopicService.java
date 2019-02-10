@@ -47,13 +47,8 @@ public class TopicService {
 	}
 
 	public void deleteTopics(int id) {
-			for(Topic t: topiclist) {
-			
-			if(t.getId()==id) {
-				topiclist.remove(t.getId());
-			}
-		}
 		
+		topiclist.removeIf(t-> t.getId()== id);
 	}
 
 }
