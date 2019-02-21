@@ -1,8 +1,16 @@
 package com.rehan.business;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Topic {
 	
-	private int id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer id;
 	private String name;
 	private String description;
 	
@@ -12,7 +20,7 @@ public class Topic {
 	}
 
 
-	public Topic(int id, String name, String description) {
+	public Topic(Integer id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -25,7 +33,7 @@ public class Topic {
 	}
 
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

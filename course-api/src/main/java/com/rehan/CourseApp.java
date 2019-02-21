@@ -1,25 +1,25 @@
 /**
  * 
  */
-package com.rehan.ms200;
+package com.rehan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author Mohammad Rehan Rivi
  *
  */
 @SpringBootApplication
-@ComponentScan("com.rehan")
 public class CourseApp {
 
 	/**
 	 * 
 	 */
 	public CourseApp() {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -28,5 +28,8 @@ public class CourseApp {
 	public static void main(String[] args) {
 		SpringApplication.run(CourseApp.class, args);
 	}
-
+	
+	
+	
+	
 }

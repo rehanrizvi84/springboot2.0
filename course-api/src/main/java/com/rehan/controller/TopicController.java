@@ -24,7 +24,7 @@ public class TopicController {
 
 	@RequestMapping("/topics")
 	public List<Topic> listTopics() {
-
+		System.out.println("Get Topics called");
 		List<Topic> topicList = topicService.getTopics();
 		return topicList;
 	}
